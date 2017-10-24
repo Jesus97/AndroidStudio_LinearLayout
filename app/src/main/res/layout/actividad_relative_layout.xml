@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/texto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto1"
+        android:background="#FF0000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/texto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto2"
+        android:background="#00FF00"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/texto1"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/texto3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto3"
+        android:textColor="#FFFFFF"
+        android:background="#0000FF"
+        android:layout_below="@+id/texto2"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto4"
+        android:textSize="50dp"
+        android:background="#eeff00"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/texto3"
+        android:gravity="bottom|right"/>
+
+</RelativeLayout>
